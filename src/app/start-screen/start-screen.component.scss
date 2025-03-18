@@ -4,7 +4,9 @@
   align-items: center;
 }
 .start-screen{
-  background-color: #404040;
+  background-image: url('./../../assets/img/bg-img.webp');
+  background-position: center;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   max-width: 100%;
