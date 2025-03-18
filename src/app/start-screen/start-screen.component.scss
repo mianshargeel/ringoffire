@@ -1,0 +1,36 @@
+@mixin d-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-screen{
+  background-color: #404040;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  @include d-flex();
+  img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: inherit;
+    max-width: 100%;
+  }
+}
+.start-label-box{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+
+    img{
+      width: 39vw;
+      height: auto;
+      &:hover{
+        filter: brightness(1.9);
+        -webkit-filter: brightness(1.9);
+        cursor: pointer;
+}
+  }
+}
