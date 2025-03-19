@@ -7,7 +7,8 @@
     <img (click)="pickCard()"  class="top-card" style="right: 25px" src="./../../assets/img/card_cover.png" alt="">
 
     @if(pickCardAnimation) {
-      <img (click)="pickCard()"  class=" pick-card" style="right: 25px" src="./../../assets/img/ace_1.png" alt="">
+      <img (click)="pickCard()"  class=" pick-card" style="right: 25px" src="./../../assets/img/{{currentCard}}.png" alt=""> 
+      <!-- currentCard gives random card at every click -->
     }
     
   </div>
